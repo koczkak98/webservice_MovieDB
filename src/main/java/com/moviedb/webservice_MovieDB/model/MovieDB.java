@@ -7,8 +7,10 @@ public class MovieDB {
 
     private String original_title;
     private String overview;
-    private int vote_count;
     private List<Genres> genres;
+    private Integer vote_count;
+    private double vote_average;
+    private double popularity;
 
     public String getOriginal_title() {
         return original_title;
@@ -26,19 +28,35 @@ public class MovieDB {
         this.overview = overview;
     }
 
-    public int getVote_count() {
-        return vote_count;
-    }
-
-    public void setVote_count(int vote_count) {
-        this.vote_count = vote_count;
-    }
-
     public List<Genres> getGenres() {
         return genres;
     }
 
     public void setGenres(List<Genres> genres) {
         this.genres = genres;
+    }
+
+    public double getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(double popularity) {
+        this.popularity = popularity;
+    }
+
+    public Integer getVote_count() {
+        return vote_count;
+    }
+
+    public void setVote_count(Integer vote_count) {
+        this.vote_count = vote_count;
+    }
+
+    public double getVote_average() {
+        return vote_average;
+    }
+
+    public void setVote_average(double vote_average) {
+        this.vote_average = vote_average;
     }
 }
